@@ -12,9 +12,9 @@ Vue.use(ref, { name: 'ant-ref' });
 /* istanbul ignore next */
 Tabs.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Tabs.name, Tabs);
-  Vue.component(Tabs.TabPane.name, Tabs.TabPane);
-  Vue.component(Tabs.TabContent.name, Tabs.TabContent);
+  Vue.component("Idm"+Tabs.name, Tabs);
+  Vue.component("Idm"+Tabs.TabPane.name, Tabs.TabPane);
+  Vue.component("Idm"+Tabs.TabContent.name, Tabs.TabContent);
 };
 
 export default Tabs;

@@ -6,7 +6,7 @@ export { PaginationProps, PaginationConfig } from './Pagination';
 /* istanbul ignore next */
 Pagination.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Pagination.name, Pagination);
+  Vue.component("Idm"+Pagination.name, Pagination);
 };
 
 export default Pagination;

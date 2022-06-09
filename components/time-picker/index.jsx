@@ -261,7 +261,7 @@ const TimePicker = {
 /* istanbul ignore next */
 TimePicker.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(TimePicker.name, TimePicker);
+  Vue.component("Idm"+TimePicker.name, TimePicker);
 };
 
 export default TimePicker;

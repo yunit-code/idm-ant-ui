@@ -90,6 +90,6 @@ const Space = {
 
 /* istanbul ignore next */
 Space.install = function(Vue) {
-  Vue.component(Space.name, Space);
+  Vue.component("Idm"+Space.name, Space);
 };
 export default Space;

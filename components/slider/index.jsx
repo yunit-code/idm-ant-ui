@@ -163,7 +163,7 @@ const Slider = {
 /* istanbul ignore next */
 Slider.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Slider.name, Slider);
+  Vue.component("Idm"+Slider.name, Slider);
 };
 
 export default Slider;

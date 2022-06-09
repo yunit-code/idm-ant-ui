@@ -68,6 +68,6 @@ const Rate = {
 /* istanbul ignore next */
 Rate.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Rate.name, Rate);
+  Vue.component("Idm"+Rate.name, Rate);
 };
 export default Rate;

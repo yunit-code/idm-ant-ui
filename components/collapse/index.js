@@ -7,8 +7,8 @@ Collapse.Panel = CollapsePanel;
 /* istanbul ignore next */
 Collapse.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Collapse.name, Collapse);
-  Vue.component(CollapsePanel.name, CollapsePanel);
+  Vue.component("Idm"+Collapse.name, Collapse);
+  Vue.component("Idm"+CollapsePanel.name, CollapsePanel);
 };
 
 export default Collapse;

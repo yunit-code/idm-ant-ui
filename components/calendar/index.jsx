@@ -250,7 +250,7 @@ const Calendar = {
 /* istanbul ignore next */
 Calendar.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Calendar.name, Calendar);
+  Vue.component("Idm"+Calendar.name, Calendar);
 };
 export { HeaderProps } from './Header';
 export default Calendar;

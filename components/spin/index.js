@@ -8,7 +8,7 @@ Spin.setDefaultIndicator = setDefaultIndicator;
 /* istanbul ignore next */
 Spin.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Spin.name, Spin);
+  Vue.component("Idm"+Spin.name, Spin);
 };
 
 export default Spin;

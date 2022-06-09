@@ -9,9 +9,9 @@ Radio.Button = Button;
 /* istanbul ignore next */
 Radio.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Radio.name, Radio);
-  Vue.component(Radio.Group.name, Radio.Group);
-  Vue.component(Radio.Button.name, Radio.Button);
+  Vue.component("Idm"+Radio.name, Radio);
+  Vue.component("Idm"+Radio.Group.name, Radio.Group);
+  Vue.component("Idm"+Radio.Button.name, Radio.Button);
 };
 
 export { Button, Group };

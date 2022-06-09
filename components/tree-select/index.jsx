@@ -186,8 +186,8 @@ const TreeSelect = {
 /* istanbul ignore next */
 TreeSelect.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(TreeSelect.name, TreeSelect);
-  Vue.component(TreeSelect.TreeNode.name, TreeSelect.TreeNode);
+  Vue.component("Idm"+TreeSelect.name, TreeSelect);
+  Vue.component("Idm"+TreeSelect.TreeNode.name, TreeSelect.TreeNode);
 };
 
 export default TreeSelect;

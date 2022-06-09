@@ -287,10 +287,10 @@ const Menu = {
 /* istanbul ignore next */
 Menu.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Menu.name, Menu);
-  Vue.component(Menu.Item.name, Menu.Item);
-  Vue.component(Menu.SubMenu.name, Menu.SubMenu);
-  Vue.component(Menu.Divider.name, Menu.Divider);
-  Vue.component(Menu.ItemGroup.name, Menu.ItemGroup);
+  Vue.component("Idm"+Menu.name, Menu);
+  Vue.component("Idm"+Menu.Item.name, Menu.Item);
+  Vue.component("Idm"+Menu.SubMenu.name, Menu.SubMenu);
+  Vue.component("Idm"+Menu.Divider.name, Menu.Divider);
+  Vue.component("Idm"+Menu.ItemGroup.name, Menu.ItemGroup);
 };
 export default Menu;

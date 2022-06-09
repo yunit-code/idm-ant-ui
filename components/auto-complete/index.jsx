@@ -148,9 +148,9 @@ const AutoComplete = {
 /* istanbul ignore next */
 AutoComplete.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(AutoComplete.name, AutoComplete);
-  Vue.component(AutoComplete.Option.name, AutoComplete.Option);
-  Vue.component(AutoComplete.OptGroup.name, AutoComplete.OptGroup);
+  Vue.component("Idm"+AutoComplete.name, AutoComplete);
+  Vue.component("Idm"+AutoComplete.Option.name, AutoComplete.Option);
+  Vue.component("Idm"+AutoComplete.OptGroup.name, AutoComplete.OptGroup);
 };
 
 export default AutoComplete;

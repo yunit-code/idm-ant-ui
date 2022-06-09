@@ -261,8 +261,8 @@ const Descriptions = {
 
 Descriptions.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Descriptions.name, Descriptions);
-  Vue.component(Descriptions.Item.name, Descriptions.Item);
+  Vue.component("Idm"+Descriptions.name, Descriptions);
+  Vue.component("Idm"+Descriptions.Item.name, Descriptions.Item);
 };
 
 export default Descriptions;

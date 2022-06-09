@@ -177,13 +177,13 @@ Demonstration of validation configuration for form controls which are not shown 
           name="files"
           action="/upload.do"
         >
-          <p class="ant-upload-drag-icon">
+          <p class="idm-ant-upload-drag-icon">
             <a-icon type="inbox" />
           </p>
-          <p class="ant-upload-text">
+          <p class="idm-ant-upload-text">
             Click or drag file to this area to upload
           </p>
-          <p class="ant-upload-hint">
+          <p class="idm-ant-upload-hint">
             Support for a single or bulk upload.
           </p>
         </a-upload-dragger>

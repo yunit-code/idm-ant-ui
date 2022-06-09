@@ -9,8 +9,8 @@ Upload.Dragger = Dragger;
 /* istanbul ignore next */
 Upload.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Upload.name, Upload);
-  Vue.component(Dragger.name, Dragger);
+  Vue.component("Idm"+Upload.name, Upload);
+  Vue.component("Idm"+Dragger.name, Dragger);
 };
 
 export default Upload;

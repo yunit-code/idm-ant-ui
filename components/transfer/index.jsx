@@ -481,7 +481,7 @@ const Transfer = {
 /* istanbul ignore next */
 Transfer.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Transfer.name, Transfer);
+  Vue.component("Idm"+Transfer.name, Transfer);
 };
 
 export default Transfer;

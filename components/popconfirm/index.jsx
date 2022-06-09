@@ -168,7 +168,7 @@ const Popconfirm = {
 /* istanbul ignore next */
 Popconfirm.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Popconfirm.name, Popconfirm);
+  Vue.component("Idm"+Popconfirm.name, Popconfirm);
 };
 
 export default Popconfirm;

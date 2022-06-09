@@ -86,6 +86,6 @@ Result.PRESENTED_IMAGE_500 = ExceptionMap[500];
 /* istanbul ignore next */
 Result.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Result.name, Result);
+  Vue.component("Idm"+Result.name, Result);
 };
 export default Result;

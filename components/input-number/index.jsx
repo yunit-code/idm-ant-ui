@@ -80,7 +80,7 @@ const InputNumber = {
 /* istanbul ignore next */
 InputNumber.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(InputNumber.name, InputNumber);
+  Vue.component("Idm"+InputNumber.name, InputNumber);
 };
 
 export default InputNumber;

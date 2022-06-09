@@ -7,8 +7,8 @@ Button.Group = ButtonGroup;
 /* istanbul ignore next */
 Button.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Button.name, Button);
-  Vue.component(ButtonGroup.name, ButtonGroup);
+  Vue.component("Idm"+Button.name, Button);
+  Vue.component("Idm"+ButtonGroup.name, ButtonGroup);
 };
 
 export default Button;

@@ -84,7 +84,7 @@ const Switch = {
 /* istanbul ignore next */
 Switch.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Switch.name, Switch);
+  Vue.component("Idm"+Switch.name, Switch);
 };
 
 export default Switch;

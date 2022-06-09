@@ -82,7 +82,7 @@ Modal.destroyAll = function destroyAllFn() {
 /* istanbul ignore next */
 Modal.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Modal.name, Modal);
+  Vue.component("Idm"+Modal.name, Modal);
 };
 
 export default Modal;

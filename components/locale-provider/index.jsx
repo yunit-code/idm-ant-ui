@@ -76,7 +76,7 @@ const LocaleProvider = {
 /* istanbul ignore next */
 LocaleProvider.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(LocaleProvider.name, LocaleProvider);
+  Vue.component("Idm"+LocaleProvider.name, LocaleProvider);
 };
 
 export default LocaleProvider;

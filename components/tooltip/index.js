@@ -4,7 +4,7 @@ import Base from '../base';
 /* istanbul ignore next */
 ToolTip.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(ToolTip.name, ToolTip);
+  Vue.component("Idm"+ToolTip.name, ToolTip);
 };
 
 export default ToolTip;

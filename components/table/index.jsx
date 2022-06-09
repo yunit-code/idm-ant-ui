@@ -133,9 +133,9 @@ const Table = {
 /* istanbul ignore next */
 Table.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Table.name, Table);
-  Vue.component(Table.Column.name, Table.Column);
-  Vue.component(Table.ColumnGroup.name, Table.ColumnGroup);
+  Vue.component("Idm"+Table.name, Table);
+  Vue.component("Idm"+Table.Column.name, Table.Column);
+  Vue.component("Idm"+Table.ColumnGroup.name, Table.ColumnGroup);
 };
 
 export default Table;

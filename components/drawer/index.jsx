@@ -263,7 +263,7 @@ const Drawer = {
 /* istanbul ignore next */
 Drawer.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Drawer.name, Drawer);
+  Vue.component("Idm"+Drawer.name, Drawer);
 };
 
 export default Drawer;

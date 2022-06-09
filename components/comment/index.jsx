@@ -92,6 +92,6 @@ const Comment = {
 /* istanbul ignore next */
 Comment.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Comment.name, Comment);
+  Vue.component("Idm"+Comment.name, Comment);
 };
 export default Comment;

@@ -13,8 +13,8 @@ export { FormItemProps } from './FormItem';
 /* istanbul ignore next */
 Form.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Form.name, Form);
-  Vue.component(Form.Item.name, Form.Item);
+  Vue.component("Idm"+Form.name, Form);
+  Vue.component("Idm"+Form.Item.name, Form.Item);
 };
 
 export default Form;

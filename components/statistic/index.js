@@ -6,8 +6,8 @@ Statistic.Countdown = Countdown;
 /* istanbul ignore next */
 Statistic.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Statistic.name, Statistic);
-  Vue.component(Statistic.Countdown.name, Statistic.Countdown);
+  Vue.component("Idm"+Statistic.name, Statistic);
+  Vue.component("Idm"+Statistic.Countdown.name, Statistic.Countdown);
 };
 
 export default Statistic;

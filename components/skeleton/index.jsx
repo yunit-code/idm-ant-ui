@@ -164,6 +164,6 @@ const Skeleton = {
 /* istanbul ignore next */
 Skeleton.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Skeleton.name, Skeleton);
+  Vue.component("Idm"+Skeleton.name, Skeleton);
 };
 export default Skeleton;

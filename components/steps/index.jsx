@@ -62,8 +62,8 @@ const Steps = {
 /* istanbul ignore next */
 Steps.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Steps.name, Steps);
-  Vue.component(Steps.Step.name, Steps.Step);
+  Vue.component("Idm"+Steps.name, Steps);
+  Vue.component("Idm"+Steps.Step.name, Steps.Step);
 };
 
 export default Steps;

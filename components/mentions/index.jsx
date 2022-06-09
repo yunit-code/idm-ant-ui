@@ -182,8 +182,8 @@ const Mentions = {
 /* istanbul ignore next */
 Mentions.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Mentions.name, Mentions);
-  Vue.component(Mentions.Option.name, Mentions.Option);
+  Vue.component("Idm"+Mentions.name, Mentions);
+  Vue.component("Idm"+Mentions.Option.name, Mentions.Option);
 };
 
 export default Mentions;

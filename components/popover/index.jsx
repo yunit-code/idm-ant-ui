@@ -63,7 +63,7 @@ const Popover = {
 /* istanbul ignore next */
 Popover.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Popover.name, Popover);
+  Vue.component("Idm"+Popover.name, Popover);
 };
 
 export default Popover;

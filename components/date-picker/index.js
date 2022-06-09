@@ -28,10 +28,10 @@ Object.assign(DatePicker, {
 /* istanbul ignore next */
 DatePicker.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(DatePicker.name, DatePicker);
-  Vue.component(DatePicker.RangePicker.name, DatePicker.RangePicker);
-  Vue.component(DatePicker.MonthPicker.name, DatePicker.MonthPicker);
-  Vue.component(DatePicker.WeekPicker.name, DatePicker.WeekPicker);
+  Vue.component("Idm"+DatePicker.name, DatePicker);
+  Vue.component("Idm"+DatePicker.RangePicker.name, DatePicker.RangePicker);
+  Vue.component("Idm"+DatePicker.MonthPicker.name, DatePicker.MonthPicker);
+  Vue.component("Idm"+DatePicker.WeekPicker.name, DatePicker.WeekPicker);
 };
 
 export default DatePicker;

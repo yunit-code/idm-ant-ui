@@ -10,8 +10,8 @@ Dropdown.Button = DropdownButton;
 /* istanbul ignore next */
 Dropdown.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Dropdown.name, Dropdown);
-  Vue.component(DropdownButton.name, DropdownButton);
+  Vue.component("Idm"+Dropdown.name, Dropdown);
+  Vue.component("Idm"+DropdownButton.name, DropdownButton);
 };
 
 export default Dropdown;

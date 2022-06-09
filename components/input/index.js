@@ -17,11 +17,11 @@ Input.Password = Password;
 /* istanbul ignore next */
 Input.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Input.name, Input);
-  Vue.component(Input.Group.name, Input.Group);
-  Vue.component(Input.Search.name, Input.Search);
-  Vue.component(Input.TextArea.name, Input.TextArea);
-  Vue.component(Input.Password.name, Input.Password);
+  Vue.component("Idm"+Input.name, Input);
+  Vue.component("Idm"+Input.Group.name, Input.Group);
+  Vue.component("Idm"+Input.Search.name, Input.Search);
+  Vue.component("Idm"+Input.TextArea.name, Input.TextArea);
+  Vue.component("Idm"+Input.Password.name, Input.Password);
 };
 
 export default Input;

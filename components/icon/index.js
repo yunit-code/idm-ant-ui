@@ -179,7 +179,7 @@ Icon.setTwoToneColor = setTwoToneColor;
 /* istanbul ignore next */
 Icon.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Icon.name, Icon);
+  Vue.component("Idm"+Icon.name, Icon);
 };
 
 export default Icon;

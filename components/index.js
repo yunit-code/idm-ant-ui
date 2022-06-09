@@ -213,17 +213,17 @@ const components = [
 
 const install = function(Vue) {
   components.map(component => {
-    Vue.use(component);
+    Vue.component("Idm"+component.name,component)//.use(component);
   });
 
-  Vue.prototype.$message = message;
-  Vue.prototype.$notification = notification;
-  Vue.prototype.$info = Modal.info;
-  Vue.prototype.$success = Modal.success;
-  Vue.prototype.$error = Modal.error;
-  Vue.prototype.$warning = Modal.warning;
-  Vue.prototype.$confirm = Modal.confirm;
-  Vue.prototype.$destroyAll = Modal.destroyAll;
+  Vue.prototype.idm_$message = message;
+  Vue.prototype.idm_$notification = notification;
+  Vue.prototype.idm_$info = Modal.info;
+  Vue.prototype.idm_$success = Modal.success;
+  Vue.prototype.idm_$error = Modal.error;
+  Vue.prototype.idm_$warning = Modal.warning;
+  Vue.prototype.idm_$confirm = Modal.confirm;
+  Vue.prototype.idm_$destroyAll = Modal.destroyAll;
 };
 
 /* istanbul ignore if */

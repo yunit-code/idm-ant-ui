@@ -146,10 +146,10 @@ function tag() {
   execSync(`git config --global user.name ${process.env.GITHUB_USER_NAME}`);
   execSync(`git tag ${version}`);
   execSync(
-    `git push https://${process.env.GITHUB_TOKEN}@github.com/vueComponent/ant-design-vue.git ${version}:${version}`,
+    `git push https://${process.env.GITHUB_TOKEN}@github.com/yunit-code/idm-antv-ui.git ${version}:${version}`,
   );
   execSync(
-    `git push https://${process.env.GITHUB_TOKEN}@github.com/vueComponent/ant-design-vue.git master:master`,
+    `git push https://${process.env.GITHUB_TOKEN}@github.com/yunit-code/idm-antv-ui.git master:master`,
   );
   console.log('tagged');
 }
@@ -232,7 +232,8 @@ function publish(tagString, done) {
   if (tagString) {
     args = args.concat(['--tag', tagString]);
   }
-  const publishNpm = process.env.PUBLISH_NPM_CLI || 'npm';
+  const publishNpm = /^win/.test(process.platform) ? 'npm.cmd' : 'npm';
+  console.log("------------------------",publishNpm)
   runCmd(publishNpm, args, code => {
     tag();
     githubRelease(() => {
@@ -256,7 +257,7 @@ function pub(done) {
       tagString = 'next';
     }
     if (packageJson.scripts['pre-publish']) {
-      runCmd('npm', ['run', 'pre-publish'], code2 => {
+      runCmd(/^win/.test(process.platform) ? 'npm.cmd' : 'npm', ['run', 'pre-publish'], code2 => {
         if (code2) {
           done(code2);
           return;
@@ -302,6 +303,7 @@ gulp.task(
     // } else {
     //   pub(done);
     // }
+    console.log("-------------------------")
     pub(done);
   }),
 );

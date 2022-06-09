@@ -194,7 +194,7 @@ const Carousel = {
 /* istanbul ignore next */
 Carousel.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Carousel.name, Carousel);
+  Vue.component("Idm"+Carousel.name, Carousel);
 };
 
 export default Carousel;

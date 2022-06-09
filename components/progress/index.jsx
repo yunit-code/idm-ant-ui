@@ -6,7 +6,7 @@ export { ProgressProps } from './progress';
 /* istanbul ignore next */
 Progress.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Progress.name, Progress);
+  Vue.component("Idm"+Progress.name, Progress);
 };
 
 export default Progress;

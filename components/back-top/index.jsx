@@ -111,7 +111,7 @@ const BackTop = {
 /* istanbul ignore next */
 BackTop.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(BackTop.name, BackTop);
+  Vue.component("Idm"+BackTop.name, BackTop);
 };
 
 export default BackTop;

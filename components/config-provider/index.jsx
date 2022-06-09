@@ -85,7 +85,7 @@ const ConfigProvider = {
 /* istanbul ignore next */
 ConfigProvider.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(ConfigProvider.name, ConfigProvider);
+  Vue.component("Idm"+ConfigProvider.name, ConfigProvider);
 };
 
 export default ConfigProvider;

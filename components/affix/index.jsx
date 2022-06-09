@@ -260,7 +260,7 @@ const Affix = {
 /* istanbul ignore next */
 Affix.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Affix.name, Affix);
+  Vue.component("Idm"+Affix.name, Affix);
 };
 
 export default Affix;

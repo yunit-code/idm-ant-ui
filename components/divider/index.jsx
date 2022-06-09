@@ -37,7 +37,7 @@ const Divider = {
 /* istanbul ignore next */
 Divider.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Divider.name, Divider);
+  Vue.component("Idm"+Divider.name, Divider);
 };
 
 export default Divider;

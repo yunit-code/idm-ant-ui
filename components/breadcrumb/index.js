@@ -9,9 +9,9 @@ Breadcrumb.Separator = BreadcrumbSeparator;
 /* istanbul ignore next */
 Breadcrumb.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Breadcrumb.name, Breadcrumb);
-  Vue.component(BreadcrumbItem.name, BreadcrumbItem);
-  Vue.component(BreadcrumbSeparator.name, BreadcrumbSeparator);
+  Vue.component("Idm"+Breadcrumb.name, Breadcrumb);
+  Vue.component("Idm"+BreadcrumbItem.name, BreadcrumbItem);
+  Vue.component("Idm"+BreadcrumbSeparator.name, BreadcrumbSeparator);
 };
 
 export default Breadcrumb;

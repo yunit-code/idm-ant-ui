@@ -10,8 +10,8 @@ Timeline.Item = TimelineItem;
 /* istanbul ignore next */
 Timeline.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Timeline.name, Timeline);
-  Vue.component(TimelineItem.name, TimelineItem);
+  Vue.component("Idm"+Timeline.name, Timeline);
+  Vue.component("Idm"+TimelineItem.name, TimelineItem);
 };
 
 export default Timeline;

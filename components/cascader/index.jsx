@@ -557,7 +557,7 @@ const Cascader = {
 /* istanbul ignore next */
 Cascader.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Cascader.name, Cascader);
+  Vue.component("Idm"+Cascader.name, Cascader);
 };
 
 export default Cascader;

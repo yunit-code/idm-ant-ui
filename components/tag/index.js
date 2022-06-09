@@ -7,8 +7,8 @@ Tag.CheckableTag = CheckableTag;
 /* istanbul ignore next */
 Tag.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Tag.name, Tag);
-  Vue.component(Tag.CheckableTag.name, Tag.CheckableTag);
+  Vue.component("Idm"+Tag.name, Tag);
+  Vue.component("Idm"+Tag.CheckableTag.name, Tag.CheckableTag);
 };
 
 export default Tag;

@@ -72,7 +72,7 @@ Empty.PRESENTED_IMAGE_SIMPLE = SimpleEmptyImg;
 /* istanbul ignore next */
 Empty.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Empty.name, Empty);
+  Vue.component("Idm"+Empty.name, Empty);
 };
 
 export default Empty;

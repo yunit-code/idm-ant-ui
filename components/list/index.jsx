@@ -276,9 +276,9 @@ const List = {
 /* istanbul ignore next */
 List.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(List.name, List);
-  Vue.component(List.Item.name, List.Item);
-  Vue.component(List.Item.Meta.name, List.Item.Meta);
+  Vue.component("Idm"+List.name, List);
+  Vue.component("Idm"+List.Item.name, List.Item);
+  Vue.component("Idm"+List.Item.Meta.name, List.Item.Meta);
 };
 
 export default List;

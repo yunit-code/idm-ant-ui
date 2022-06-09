@@ -168,7 +168,7 @@ const Alert = {
 /* istanbul ignore next */
 Alert.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(Alert.name, Alert);
+  Vue.component("Idm"+Alert.name, Alert);
 };
 
 export default Alert;

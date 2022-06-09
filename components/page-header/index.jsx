@@ -140,7 +140,7 @@ const PageHeader = {
 /* istanbul ignore next */
 PageHeader.install = function(Vue) {
   Vue.use(Base);
-  Vue.component(PageHeader.name, PageHeader);
+  Vue.component("Idm"+PageHeader.name, PageHeader);
 };
 
 export default PageHeader;
