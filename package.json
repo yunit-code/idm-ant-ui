@@ -1,6 +1,6 @@
 {
   "name": "idm-antv-ui",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "title": "IDM ANT VUE UI",
   "description": "An enterprise-class UI design language and Vue-based implementation",
   "keywords": [
@@ -173,7 +173,7 @@
     "xhr-mock": "^2.5.1"
   },
   "dependencies": {
-    "@ant-design/icons": "^2.1.1",
+    "idm-ant-icons": "^1.0.0",
     "@ant-design/icons-vue": "^2.0.0",
     "@simonwep/pickr": "~1.7.0",
     "add-dom-event-listener": "^1.0.2",

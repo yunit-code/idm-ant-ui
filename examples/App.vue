@@ -1,5 +1,6 @@
 <template>
   <div>
+    <idm-a-icon type="step-forward" />
     <idm-a-input placeholder="Basic usage" />
     <idm-a-card
       title="测试"
